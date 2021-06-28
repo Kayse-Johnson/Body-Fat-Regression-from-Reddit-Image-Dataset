@@ -14,7 +14,7 @@ Dataset used:
 
 The dataset used consists of 1022 self submitted reddit post images on the r/guess_my_bf which were labelled in the comments section and 773 r/bulk_or_cut which were hand labeled.
 
-insert pic of graph
+![newplot](https://user-images.githubusercontent.com/79870177/123670269-eeba0700-d834-11eb-8ee3-547615593435.png)
 
 insert example pics from each
 
