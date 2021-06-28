@@ -16,9 +16,10 @@ The dataset used consists of 1022 self submitted reddit post images on the r/gue
 
 ![newplot](https://user-images.githubusercontent.com/79870177/123670269-eeba0700-d834-11eb-8ee3-547615593435.png)
 
-insert example pics from each
+![8trcju](https://user-images.githubusercontent.com/79870177/123670492-2de85800-d835-11eb-9b12-9f330034a053.jpg)
+![9cmsnv](https://user-images.githubusercontent.com/79870177/123670502-317bdf00-d835-11eb-9633-b202281c81a5.jpg)
 
-These were all male since as the female images were filtered out due to not being enough of them. They were also seen to follow a normal random distribution.
+All the pictures used are male since there were not enough female samples to accurately predict their bodyfats and their inclusion would have affected predicitons for males. Especially as women naturally have higher body fats. The body fat data follows a normal random distribution as one might expect.
 Procedure:
 
 The dataset is all loaded into a dataset class and where the images and their labels (body fat percentage) are split into train and test sets. the __len__()and __getitem__() magic functions are defined to allow for the dataloader to load the data in batches.
