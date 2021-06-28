@@ -12,7 +12,7 @@ We aim to produce a model that can predict a body fat percentage within +-2% 90%
 
 ## Dataset used:
 
-The dataset used consists of 1022 self submitted reddit post images on the r/guess_my_bf which were labelled in the comments section and 773 r/bulk_or_cut which were hand labeled.
+The dataset used consists of 1022 self submitted reddit post images. 1/3 of the images come from r/guess_my_bf which were assigned labels from user made comments and 773 images were sourced from r/bulk_or_cut, these were hand labeled.
 
 ![newplot](https://user-images.githubusercontent.com/79870177/123670269-eeba0700-d834-11eb-8ee3-547615593435.png)
 
