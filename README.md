@@ -33,10 +33,10 @@ Description of the Model used:
 The base model used and was chosen as a good interpreter of image data, was the resnet model. The rational behind that is that being trained on many images prior the model would hold some base intuition about images in it's logic which we may exploit.
 
 The dataset had to be transformed in order to use the pretrained model and hence all images were resized to a (224,224) dimension image. Additionally, the image dataset is normalised to ensure the pixel distribution is in a similar scale for faster conversions. Further augmentations were used to facilitate better training of the model. These augmentations were as follows:
--random horizontal flip
--random vertical flip
--random rotation
-- gussian blur
+- random horizontal flip
+- random vertical flip
+- random rotation
+- gaussian blur
 
 ## Analysis of the results and conclusion:
 
