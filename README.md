@@ -1,16 +1,16 @@
 # Body-Fat-Regression-from-Reddit-Image-Dataset
 A deep learning project that aims to use images scraped using the reddit web scraper, to predict the body fat of a male from a front facing picture of their body.
 
-Background:
+## Background:
 
 The goal of this Model is to be able to receive the customer's picture and give a prediction of body fat percentage based on reddit user perception. *The target consumers are adult males who may want a rough estimate of their bodyfat. *
 Crucially, this project will not give a perfect estimate as it has been trained on the pereception of a person's bodyfat and not their exact bodyfat. Some of the images in the dataset have also been hand labelled and so it introduces further intrinsic bias and noise to the dataset.
 
-Product targets and specification:
+## Product targets and specification:
 
 We aim to produce a model that can predict a body fat percentage within +-2% 90% of the time.
 
-Dataset used:
+## Dataset used:
 
 The dataset used consists of 1022 self submitted reddit post images on the r/guess_my_bf which were labelled in the comments section and 773 r/bulk_or_cut which were hand labeled.
 
@@ -20,7 +20,8 @@ The dataset used consists of 1022 self submitted reddit post images on the r/gue
 ![9cmsnv](https://user-images.githubusercontent.com/79870177/123670502-317bdf00-d835-11eb-9633-b202281c81a5.jpg)
 
 All the pictures used are male since there were not enough female samples to accurately predict their bodyfats and their inclusion would have affected predicitons for males. Especially as women naturally have higher body fats. The body fat data follows a normal random distribution as one might expect.
-Procedure:
+
+## Procedure:
 
 The dataset is all loaded into a dataset class and where the images and their labels (body fat percentage) are split into train and test sets. the __len__()and __getitem__() magic functions are defined to allow for the dataloader to load the data in batches.
 
@@ -31,8 +32,13 @@ Description of the Model used:
 
 The base model used and was chosen as a good interpreter of image data, was the resnet model. The rational behind that is that being trained on many images prior the model would hold some base intuition about images in it's logic which we may exploit.
 
-The model was augmented with...
-Analysis of the results and conclusion:
+The dataset had to be transformed in order to use the pretrained model and hence all images were resized to a (224,224) dimension image. Additionally, the image dataset is normalised to ensure the pixel distribution is in a similar scale for faster conversions. Further augmentations were used to facilitate better training of the model. These augmentations were as follows:
+-random horizontal flip
+-random vertical flip
+-random rotation
+- gussian blur
+
+## Analysis of the results and conclusion:
 
 results found ... acc within... and ... acc within...
 
