@@ -1,5 +1,9 @@
 import torch
 class DataLoad():
+    '''
+    Define the torch dataloaders for each dataset
+
+    '''
     def train_loader(self,train_dataset, Train_Batch_Size):
         return torch.utils.data.DataLoader(
         train_dataset,

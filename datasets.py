@@ -32,6 +32,11 @@ class BodyFatImgDataset(torch.utils.data.Dataset):
       return len(self.dataset["bodyfat"])
 
     def __getitem__(self, idx):
+      '''
+      defines get item to return item by indexing dataset class 
+      input : index(int)
+      return : image(torch.tensor), bodyfat(float)
+      '''
       if torch.is_tensor(idx):
           idx = idx.tolist()
 
