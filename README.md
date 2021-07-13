@@ -40,8 +40,4 @@ The dataset had to be transformed in order to use the pretrained model and hence
 
 ## Analysis of the results and conclusion:
 
-results found ... acc within... and ... acc within...
-
-this shows that ...
-
-Possible uninvestigated approaches include... 
+results on the unseen test dataset show a mean squared error of 10.2457 this indicates that on average the result is on average 3.2% off and can be attributed to the lack of data to train from as deep learning models generally require a lot of data to train from to a good accuracy level.
